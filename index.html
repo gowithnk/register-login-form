@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register & Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="form-logo" src="logo.jpg" alt="Logo" />
+      <h2 class="title" id="form-title">Register | Email Verification | 2FA</h2>
+      <form
+        class="form"
+        style="display: block"
+        id="register-form"
+        onsubmit="return validateForm()"
+      >
+        <div class="form-group">
+          <label for="name">
+            <input type="text" id="name" name="name" class="input" required />
+            <span>Name</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="username">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="input"
+              required
+            />
+            <span>Username</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input"
+              required
+            />
+            <span>Email</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="password">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="input"
+              required
+            />
+            <span>Password</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              class="input"
+              required
+            />
+            <span>Confirm Password</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Register" class="submit" />
+        </div>
+      </form>
+      <div id="login-form">
+        <form class="form" id="login-form-content">
+          <div class="form-group">
+            <label for="login-username">
+              <input
+                type="text"
+                id="login-username"
+                name="login-username"
+                class="input"
+                required
+              />
+              <span>Username</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="login-password">
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                class="input"
+                required
+              />
+              <span>Password</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Login" />
+          </div>
+        </form>
+      </div>
+      <div class="toggle-btn">
+        <a href="#" id="login-toggle">Already have an account? Login</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
