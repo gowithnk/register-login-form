@@ -13,7 +13,7 @@ loginToggle.addEventListener("click", function (event) {
   } else {
     registerForm.style.display = "block";
     loginForm.style.display = "none";
-    formTitle.textContent = "Register | Email Verification | 2FA";
+    formTitle.textContent = "New user registration";
   }
 });
 
